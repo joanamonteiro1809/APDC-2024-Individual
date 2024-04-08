@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="content-type"
+	content="application/xhtml+xml; charset=UTF-8" />
+<title>My First Web App</title>
+<script type="text/javascript" src="/login.js"></script>
+</head>
+
+<body>
+	<h1>User login</h1>
+	<form action = "login()" id="login">
+		<label for="username">Username:</label> 
+		<input type="text" id="username" name="username" required><br> <br> <label
+			for="password">Password:</label> <input type="password"
+			id="password" name="password" required><br> <br>
+		 <input type="checkbox" onclick="togglePasswordVisibility()">Show
+        Password 
+		<input type="submit" value="Login">
+	</form>
+	<!-- <button onclick="login()">Login</button> -->
+
+	<table>
+		<tr>
+			<td colspan="2" style="font-weight: bold;">Available Services:</td>
+		</tr>
+	</table>
+	<script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+
+	<footer> Copyright: FCT NOVA, APC-PEI 2023/2024 by Joana
+		Monteiro </footer>
+</body>
+</html>

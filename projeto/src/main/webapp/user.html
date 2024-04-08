@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <title>USER PAGE</title>
+  <script type = "text/javascript" src="/login.js"></script>  
+</head>
+<body>
+  <h1>User Page</h1>
+<form id="userPage" onsubmit="redirectToSelectedOption()">
+  <label for="options">Options</label>
+      <select name="options" id="opt">
+        <option value="changeAtributtes">Change a user attribute</option>
+        <option value="changePassword">Change your password</option>
+        <option value="changeState">Change a user state</option>
+        <option value="changeRole">Change a user role</option>
+        <option value="listUsers">List users</option>
+        <option value="removeUsers">Remove a user</option>
+        <option value="registerResource">Regist another account</option>
+        <option value="login">Login other account</option>
+      </select>
+		<button onclick="redirectToSelectedOption()">Option:</button>
+     <!-- <input type="submit" value="Submit" />  --> 
+ </form>
+   <footer>
+    Copyright: FCT NOVA, APC-PEI 2023/2024 by Joana Monteiro
+  </footer>
+</body>
+</html>
